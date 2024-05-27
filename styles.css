@@ -1,0 +1,284 @@
+/* Reset básico para evitar diferencias entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Diseño de Cajas */
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #f4f4f4;
+}
+
+.example {
+    display: inline-block;
+}
+
+/* Diferencia entre Inline y Bloque */
+.inline {
+    color: white;
+    background-color: #007BFF;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.block {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+}
+
+/* Propiedad Position */
+.position-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #333;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.position-static {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #333;
+    margin: 10px;
+    display: inline-block;
+}
+
+.position-relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #e1e1e1;
+    padding: 10px;
+    border: 1px solid #333;
+    margin: 10px;
+    display: inline-block;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 120px; /* Ajuste para evitar superposición */
+    left: 20px;
+    background-color: #c1c1c1;
+    padding: 10px;
+    border: 1px solid #333;
+    display: inline-block;
+}
+
+.position-fixed-simulated {
+    background-color: #a1a1a1;
+    padding: 10px;
+    border: 1px solid #333;
+    display: inline-block;
+    position: absolute;
+    top: 180px; /* Ajuste para evitar superposición */
+    left: 20px; /* Ajusta según sea necesario */
+}
+
+/* Float & Clear */
+.float-left {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #f4f4f4;
+    margin: 10px;
+}
+
+.float-right {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: #e1e1e1;
+    margin: 10px;
+}
+
+.clear-both {
+    clear: both;
+    background-color: #d1d1d1;
+    padding: 10px;
+    border: 1px solid #333;
+    margin-top: 50px;
+}
+
+/* Propiedad Display */
+.display-block {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.display-inline-block {
+    display: inline-block;
+    background-color: #e1e1e1;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.display-none {
+    display: none;
+    background-color: #c1c1c1;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* Propiedad Overflow */
+.overflow-hidden {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.overflow-visible {
+    width: 150px;
+    height: 100px;
+    overflow: visible;
+    background-color: #e1e1e1;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.overflow-scroll {
+    width: 150px;
+    height: 100px;
+    overflow: scroll;
+    background-color: #c1c1c1;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.overflow-auto {
+    width: 150px;
+    height: 100px;
+    overflow: auto;
+    background-color: #a1a1a1;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* Propiedad Visibility */
+.visibility-visible {
+    visibility: visible;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+    background-color: #e1e1e1;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* Propiedad Z-Index */
+.z-index-base {
+    position: relative;
+    z-index: 1;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.z-index-top {
+    position: relative;
+    z-index: 10;
+    background-color: #e1e1e1;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* CSS3 Flexbox */
+.flex-container {
+    display: flex;
+    flex-direction: row; /* flex-direction */
+    flex-wrap: wrap; /* flex-wrap */
+    justify-content: space-between; /* justify-content */
+    align-items: center; /* align-items */
+    align-content: space-around; /* align-content */
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.flex-item {
+    background-color: #c1c1c1;
+    padding: 10px;
+    border: 1px solid #333;
+    margin: 5px;
+    flex: 1; /* flex-grow */
+    order: 2; /* order */
+}
+
+.flex-item:first-child {
+    flex: 2; /* flex-grow for the first item */
+    order: 1; /* order for the first item */
+    align-self: flex-end; /* align-self */
+}
+
+/* Estilos para Tooltips */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+    max-width: 200px;
+}

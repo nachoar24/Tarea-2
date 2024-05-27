@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Cajas y Propiedades de Estilo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#box-model">Diseño de Cajas</a></li>
+                <li><a href="#inline-vs-block">Inline vs. Bloque</a></li>
+                <li><a href="#position">Propiedad Position</a></li>
+                <li><a href="#float-clear">Float & Clear</a></li>
+                <li><a href="#display">Propiedad Display</a></li>
+                <li><a href="#overflow">Propiedad Overflow</a></li>
+                <li><a href="#visibility">Propiedad Visibility</a></li>
+                <li><a href="#z-index">Propiedad Z-Index</a></li>
+                <li><a href="#flexbox">CSS3 Flexbox</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Diseño de Cajas y Propiedades de Estilo</h1>
+    
+    <section id="box-model" class="box-model">
+        <h2>Ejemplo de Diseño de Cajas (Box Model)</h2>
+        <div class="box example" data-tooltip="Caja con padding, border y background-color.">Caja 1</div>
+        <div class="box example" data-tooltip="Caja con padding, border y background-color.">Caja 2</div>
+    </section>
+    
+    <section id="inline-vs-block" class="inline-vs-block">
+        <h2>Elementos Inline vs. Bloque</h2>
+        <p>Este es un <span class="inline example" data-tooltip="Elemento inline no inicia en una nueva línea y solo ocupa el espacio necesario.">elemento inline</span> dentro de un párrafo.</p>
+        <div class="block example" data-tooltip="Elemento de bloque inicia en una nueva línea y ocupa todo el ancho disponible.">Este es un elemento de bloque.</div>
+    </section>
+
+    <section id="position" class="position">
+        <h2>Propiedad Position</h2>
+        <div class="position-container">
+            <div class="position-static" data-tooltip="Static: Posición por defecto, no afecta el flujo normal del documento.">Static</div>
+            <div class="position-relative" data-tooltip="Relative: Se posiciona en relación a su posición original.">Relative</div>
+            <div class="position-absolute" data-tooltip="Absolute: Se posiciona en relación a su contenedor posicionado más cercano.">Absolute</div>
+            <div class="position-fixed-simulated" data-tooltip="Fixed Simulado: Se comporta como un fixed pero dentro del contenedor.">Fixed Simulado</div>
+        </div>
+    </section>
+
+    <section id="float-clear" class="float-clear">
+        <h2>Float & Clear</h2>
+        <div class="float-left" data-tooltip="Float Left: El elemento flota a la izquierda.">Float Left</div>
+        <div class="float-right" data-tooltip="Float Right: El elemento flota a la derecha.">Float Right</div>
+        <div class="clear-both" data-tooltip="Clear Both: Evita que los elementos flotantes se sitúen a su lado.">Clear Both</div>
+    </section>
+
+    <section id="display" class="display">
+        <h2>Propiedad Display</h2>
+        <div class="display-block" data-tooltip="Block: El elemento se comporta como un bloque.">Block</div>
+        <div class="display-inline-block" data-tooltip="Inline-Block: El elemento se comporta como un inline pero se puede definir ancho y alto.">Inline-Block</div>
+        <div class="display-none" data-tooltip="None: El elemento no se muestra en el documento.">None</div>
+    </section>
+
+    <section id="overflow" class="overflow">
+        <h2>Propiedad Overflow</h2>
+        <div class="overflow-hidden" data-tooltip="Hidden: El contenido desbordante se recorta y no se muestra.">Hidden</div>
+        <div class="overflow-visible" data-tooltip="Visible: El contenido desbordante es visible.">Visible</div>
+        <div class="overflow-scroll" data-tooltip="Scroll: Se añaden barras de desplazamiento para ver el contenido desbordante.">Scroll</div>
+        <div class="overflow-auto" data-tooltip="Auto: Se añaden barras de desplazamiento solo cuando es necesario.">Auto</div>
+    </section>
+
+    <section id="visibility" class="visibility">
+        <h2>Propiedad Visibility</h2>
+        <div class="visibility-visible" data-tooltip="Visible: El elemento es visible.">Visible</div>
+        <div class="visibility-hidden" data-tooltip="Hidden: El elemento está oculto pero ocupa espacio en el documento.">Hidden</div>
+    </section>
+
+    <section id="z-index" class="z-index">
+        <h2>Propiedad Z-Index</h2>
+        <div class="z-index-base" data-tooltip="Z-Index: 1. Define el orden de apilamiento de los elementos.">Base</div>
+        <div class="z-index-top" data-tooltip="Z-Index: 10. Define un orden de apilamiento superior.">Top</div>
+    </section>
+
+    <section id="flexbox" class="flexbox">
+        <h2>CSS3 Flexbox</h2>
+        <div class="flex-container" data-tooltip="Flex Container: Contenedor que aplica las propiedades de Flexbox a sus hijos.">
+            <div class="flex-item" data-tooltip="Flex Item: Elemento flexible.">Item 1</div>
+            <div class="flex-item" data-tooltip="Flex Item: Elemento flexible.">Item 2</div>
+            <div class="flex-item" data-tooltip="Flex Item: Elemento flexible.">Item 3</div>
+            <div class="flex-item" data-tooltip="Flex Item: Elemento flexible.">Item 4</div>
+            <div class="flex-item" data-tooltip="Flex Item: Elemento flexible.">Item 5</div>
+        </div>
+    </section>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
